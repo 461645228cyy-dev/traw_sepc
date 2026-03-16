@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>LLM Daily</title>
+    <link>./</link>
+    <description>每天 5 分钟，追踪大模型前沿</description>
+    <language>zh-CN</language>
+  </channel>
+</rss>
+

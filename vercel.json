@@ -1,0 +1,8 @@
+{
+  "framework": "vite",
+  "installCommand": "npm --prefix llm-daily install --no-package-lock",
+  "buildCommand": "npm --prefix llm-daily run build",
+  "outputDirectory": "llm-daily/dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
+

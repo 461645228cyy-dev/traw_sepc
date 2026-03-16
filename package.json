@@ -1,0 +1,14 @@
+{
+  "name": "llm-daily-root",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "npm --prefix llm-daily run dev",
+    "build": "npm --prefix llm-daily install --no-package-lock && npm --prefix llm-daily run build",
+    "preview": "npm --prefix llm-daily run preview"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
