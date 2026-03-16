@@ -110,9 +110,9 @@ button,input,textarea{font:inherit;color:inherit}
 
 .hero__bg{position:absolute;inset:0;z-index:1}
 .hero__net{position:absolute;inset:-60px;background:radial-gradient(circle at 20% 10%,color-mix(in srgb,var(--primary) 24%,transparent),transparent 52%),radial-gradient(circle at 80% 30%,color-mix(in srgb,var(--primary) 18%,transparent),transparent 56%),radial-gradient(circle at 60% 90%,color-mix(in srgb,var(--primary) 14%,transparent),transparent 60%),linear-gradient(120deg,color-mix(in srgb,var(--primary) 12%,transparent),transparent 55%);filter:saturate(1.2)}
-.hero__code{position:absolute;inset:0;opacity:.7;font-family:var(--mono);font-size:14px;line-height:1.6;color:color-mix(in srgb,var(--text) 50%,transparent);mask-image:linear-gradient(to right,transparent,black 20%,black 80%,transparent);pointer-events:none}
-.hero__code::before{content:"const agent = createAgent({ tools: [search, fetch, rerank] });\A// ReAct: think -> act -> observe\Afunction route(query){ return llm.plan(query) }\A\A# RAG pipeline\Aembed -> retrieve -> rerank -> cite\A\Amodel = merge(base, lora)\Aexport default app;\A";white-space:pre;position:absolute;left:60%;top:30%;transform:translate(-50%,-50%);animation:codefloat 8s ease-in-out infinite}
-@keyframes codefloat{0%,100%{transform:translate(-50%,-50%)}50%{transform:translate(-50%,-54%)}}
+.hero__code{position:absolute;inset:0;opacity:.5;font-family:var(--mono);font-size:14px;line-height:1.6;color:color-mix(in srgb,var(--text) 50%,transparent);mask-image:linear-gradient(to right,transparent 40%,black 80%,transparent);pointer-events:none;display:flex;justify-content:flex-end;align-items:center;padding-right:20px}
+.hero__code::before{content:"const agent = createAgent({ tools: [search, fetch, rerank] });\A// ReAct: think -> act -> observe\Afunction route(query){ return llm.plan(query) }\A\A# RAG pipeline\Aembed -> retrieve -> rerank -> cite\A\Amodel = merge(base, lora)\Aexport default app;\A";white-space:pre;text-align:right;animation:codefloat 8s ease-in-out infinite}
+@keyframes codefloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 
 .main{padding:12px 0 56px}
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:18px;align-items:start}
